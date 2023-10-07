@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ToastAndSnacknar</string>
+    <string name="texto_cerrar">Cerrar</string>
+    <string name="texto_toast">Mostrar toast</string>
 </resources>

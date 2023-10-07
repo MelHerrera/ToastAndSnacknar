@@ -1,5 +1,6 @@
 package com.example.toastandsnacknar
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,7 +24,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnSnack.setOnClickListener {
-            Snackbar.make(it, "Hola soy un snackbar", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(it, "Hola soy un snackbar", Snackbar.LENGTH_LONG)
+                .setAction(R.string.texto_cerrar){
+                   binding.btnToast.text = "texto toast manipulado"
+                }.setActionTextColor(getColor(R.color.blue_color)).show()
         }
     }
 }
